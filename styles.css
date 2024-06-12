@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgreen; /* Light green background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80vw; /* 80% of the viewport width */
+    height: 80vh; /* 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px; /* Add padding to the container */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10vh auto; /* Center the container vertically */
+}
+
+.balls-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 90%; /* Adjust the width of the balls container */
+    flex-flow: row wrap;
+}
+
+.ball {
+    width: 40px; /* Increase the width of the balls */
+    height: 40px; /* Increase the height of the balls */
+    border-radius: 50%;
+    background-color: #0f0; /* Green */
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s ease; /* Smooth transition for background color change */
+}
+
+
+.ball.correct {
+    background-color: pink; /* Pink color for the correct ball */
+    animation: pulse 1s infinite; /* Pulse animation for the correct ball */
+}
+
+.ball.wrong {
+    background-color: yellow; /* Yellow color for the wrong ball */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ... rest of your CSS ... */
+
+
+h1 {
+    color: #333;
+}
+
+.level {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#gameOutput {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+
+
+
